@@ -7,7 +7,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////
 // NEGATIVE LOOKAHEADS
 
-// Negative Lookaheads check to match a single or group of characters ONLY if another group of characters DOES NOT FOLLOW the first group. So, if groupA matches AND IS NOT FOLLOWED by groupB, then true. Else false.
+// Negative Lookaheads check to match a group of characters ONLY if another group of characters DOES NOT FOLLOW the first group. So, if groupA matches AND IS NOT FOLLOWED by groupB, then true. Else false.
 
 
 //Example 1
