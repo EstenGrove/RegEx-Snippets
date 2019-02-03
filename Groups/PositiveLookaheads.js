@@ -24,7 +24,9 @@ console.log('Ex2-foobar: ' + reg1.test(foobar)); // true
 
 //Example 3. 
 const reg2 = /[a-z](?=\+)/;
-const testCase = 'dge+';
-console.log('Ex3-testCase: ' + reg2.test(testCase)); // true
+const testCase1 = 'dge+';
+const testCase2 = '+a88+'
+console.log('Ex3-testCase1: ' + reg2.test(testCase1)); // true
+console.log('Ex3-testCase2: ' + reg2.test(testCase2)); // false
 
 // Example 3 resolve true as it is looking for any letter immediately followed by a plus sign
