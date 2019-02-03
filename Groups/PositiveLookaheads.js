@@ -27,7 +27,8 @@ console.log('Lookahead: ' + group1.test(testFoobar)); // true
 //Example 3. 
 
 // The regex
-const group2 = /(a(?=+)/;
+const group2 = /[a-z](?=\+)/;
 
 const testCase = 'dge+';
-console.log('Ex.3: ' + group2.test(testCase));
+console.log('Ex.3: ' + group2.test(testCase)); // true
+// Example 3 resolve true as it is looking for any letter immediately followed by a plus sign
