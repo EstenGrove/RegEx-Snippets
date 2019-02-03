@@ -17,7 +17,7 @@ Anything inside of / / is what is to be tested for
 - ^ — Matches the beginning of the string.
 - \$ — Matches the end of the string.
 
-#### Character groups
+#### Character Types
 
 - \d  — Matches any single digit character. Same as [0-9]
 - \D — Any character that’s NOT a digit
@@ -25,6 +25,18 @@ Anything inside of / / is what is to be tested for
 - \W— Any non-alphanumeric character
 - \s — Matches any whitespace character(space, tab, new line, and similar)
 - \S — Any non-whitespace character
+
+#### Groups and Ranges
+
+- .: Any character except newline (\n)
+- (a|b): a or b
+- (…): Group
+- (?:…): Passive (non-c­apt­uring) group
+- [abc]: a, b or c
+- [^abc]: Not a, b or c
+- [a-z]: Letters from a to z
+- [A-Z]: Uppercase letters from A to Z
+- [0-9]: Digits from 0 to 9
 - [XYZ] — Character Set: Matches any single character from the character within the brackets. You can also do a range such as [A-Z]
 - [XYZ]+ — Matches one or more of any of the characters in the set.
 - [^a-z] — Inside a character set, the ^ is used for negation. In this example, match anything that is NOT an uppercase letter.
