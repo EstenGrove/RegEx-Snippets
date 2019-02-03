@@ -1,6 +1,8 @@
 ## RegEx-Snippets
 A collection of helpful RegEx snippets, like captures and groups and plenty of complex patterns.
 
+---------------------------
+
 #### Cheat-Sheet:
 
 Anything inside of / / is what is to be tested for	
