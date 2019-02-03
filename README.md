@@ -27,6 +27,22 @@ Anything inside of / / is what is to be tested for
 * There are five optional flags. They can be used separately or together and are placed after the closing slash. Example: /[A-Z]/g I’ll only be introducing 2 here.
 * g — Global search
 * i — case insensitive search
+#### Groups
+* (...) - Anything contained within parenthesis will be the search expression. 
+* ###### Positive Lookaheads
+  * This will search for two different groups of characters. 
+  * It will only return true if "groupA" of characters IS FOLLOWED BY "groupB".
+    * Ex: const reg = /foo(?=bar)/;
+    * Then to test you could run: 
+      * /foo(?=bar)/.test(someString);  ###### OR
+      * reg.test(someString);
+* ###### Negative Lookaheads
+  * Like Postives, will search for two different groups HOWEVER, it will only return a match if the first group of characters IS NOT FOLLOWED by the second group of characters. 
+    * Ex: const reg = /foo(?!bar)/;
+    * Then to test you could run:
+      * /foo(?!bar)/.test(someString);  ###### OR
+      * reg.test(someString);
+        * This will only return a match if "foo" exists and IS NOT FOLLOWED BY "bar".
 #### Advanced
 * (x) — Capturing Parenthesis: Matches x and remembers it so we can use it later.
 * (?:x) — Non-capturing Parenthesis: Matches x and does not remembers it.
