@@ -26,6 +26,12 @@ Anything inside of / / is what is to be tested for
 - \s — Matches any whitespace character(space, tab, new line, and similar)
 - \S — Any non-whitespace character
 
+#### Flags
+
+- There are five optional flags. They can be used separately or together and are placed after the closing slash. Example: /[A-Z]/g I’ll only be introducing 2 here.
+- g — Global search
+- i — case insensitive search
+
 #### Groups and Ranges
 
 - .: Any character except newline (\n)
@@ -40,12 +46,6 @@ Anything inside of / / is what is to be tested for
 - [XYZ] — Character Set: Matches any single character from the character within the brackets. You can also do a range such as [A-Z]
 - [XYZ]+ — Matches one or more of any of the characters in the set.
 - [^a-z] — Inside a character set, the ^ is used for negation. In this example, match anything that is NOT an uppercase letter.
-
-#### Flags
-
-- There are five optional flags. They can be used separately or together and are placed after the closing slash. Example: /[A-Z]/g I’ll only be introducing 2 here.
-- g — Global search
-- i — case insensitive search
 
 #### Groups
 
