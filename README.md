@@ -75,6 +75,9 @@ Anything inside of / / is what is to be tested for
 - ^ — Inverted search. Any character that is NOT in the included search(so search for everything EXCEPT what is included in the RegEx)
   - Ex. let nonBinary = /[^01]/;
     - This will match anything except 1s and 0s
+
+#### Quantifiers
+
 - {n} - Curly braces are used to set HOW MANY TIMES an operator is to be matched, or how many occurences to look for.
   - {n} - "n" represents how many times a character, expression or subexpression must occur.
     - Ex: {2} = means that a character or expression must occur 2 times.
@@ -82,3 +85,9 @@ Anything inside of / / is what is to be tested for
     - Ex: {1, 4} - means that a specified character or expression must occur between 1 & 4 times.
   * {m, } - means that a character/expression must occur at least "m" times.
     - Ex: {3, } - means it should occur at least 3 times.
+      - - - 0 or more
+      - - - 1 or more
+      - ? - 0 or 1
+      - {3} - Exactly 3
+      - {3, } - 3 or more
+      - {3, 5} - 3, 4 or 5
