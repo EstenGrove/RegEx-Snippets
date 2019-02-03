@@ -91,3 +91,9 @@ Anything inside of / / is what is to be tested for
       - {3} - Exactly 3
       - {3, } - 3 or more
       - {3, 5} - 3, 4 or 5
+
+#### Comments in RegEx
+
+- (?#commentHere) - Everything between the "#" and the closing parenthesis will be ignored as a comment.
+  - Ex: @(?#checkFor@) - Then you could run: - @(?#checkFor@).test(someString); - It will check only for the "@" sign inside of "someString" and will ignore the rest. - Characters can be placed before or after the comment.
+    > NOTE: Comments don't work in JavaScript.
