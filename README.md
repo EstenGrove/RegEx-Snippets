@@ -29,18 +29,18 @@ Anything inside of / / is what is to be tested for
 * i — case insensitive search
 #### Groups
 * (...) - Anything contained within parenthesis will be the search expression. 
-* ###### Positive Lookaheads
+* #### Positive Lookaheads
   * This will search for two different groups of characters. 
   * It will only return true if "groupA" of characters IS FOLLOWED BY "groupB".
     * Ex: const reg = /foo(?=bar)/;
     * Then to test you could run: 
-      * /foo(?=bar)/.test(someString);  ###### OR
+      * /foo(?=bar)/.test(someString);  OR
       * reg.test(someString);
-* ###### Negative Lookaheads
+* #### Negative Lookaheads
   * Like Postives, will search for two different groups HOWEVER, it will only return a match if the first group of characters IS NOT FOLLOWED by the second group of characters. 
     * Ex: const reg = /foo(?!bar)/;
     * Then to test you could run:
-      * /foo(?!bar)/.test(someString);  ###### OR
+      * /foo(?!bar)/.test(someString);  OR
       * reg.test(someString);
         * This will only return a match if "foo" exists and IS NOT FOLLOWED BY "bar".
 #### Advanced
