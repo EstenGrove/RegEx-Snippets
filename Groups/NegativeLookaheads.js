@@ -7,7 +7,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////
 // NEGATIVE LOOKAHEADS
 
-// Negative Lookaheads check to match a single or set of characters ONLY if another set of characters DOES NOT FOLLOW the first set. So, if setA matches AND IS NOT followed by setB, then true. Else false.
+// Negative Lookaheads check to match a single or group of characters ONLY if another group of characters DOES NOT FOLLOW the first group. So, if groupA matches AND IS NOT FOLLOWED by groupB, then true. Else false.
 
 
 //Example 1
@@ -21,4 +21,4 @@ const foobaz = 'foobaz';
 console.log('Ex1-foobar: ' + reg.test(foobar)); // false
 console.log('Ex1-foobaz: ' + reg.test(foobaz)); // true
 
-//The Above 'reg' will return true if "foo" IS NOT FOLLOWED by "bar"
+//The Above 'reg' will return true if "foo" IS NOT FOLLOWED by "bar".
