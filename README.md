@@ -33,4 +33,4 @@ Anything inside of / / is what is to be tested for
 * x(?=y) — Lookahead: Matches x only if it is followed by y.
 * ^ — Inverted search. Any character that is NOT in the included search(so search for everything EXCEPT what is included in the RegEx)
   * Ex. let nonBinary = /[^01]/;
-    * This will search for anything except 1s and 0s
+    * This will match anything except 1s and 0s
