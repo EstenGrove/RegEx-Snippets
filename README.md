@@ -4,7 +4,7 @@ A collection of helpful RegEx snippets, like captures and groups and plenty of c
 #### Cheat-Sheet:
 
 Anything inside of / / is what is to be tested for	
-###### Symbols
+##### Symbols
 * . — (period) Matches any single character, except for line breaks.(new line)
 * * — Matches the preceding expression 0 or more times.
 * + — Matches the preceding expression 1 or more times.
