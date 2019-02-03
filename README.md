@@ -85,8 +85,8 @@ Anything inside of / / is what is to be tested for
     - Ex: {1, 4} - means that a specified character or expression must occur between 1 & 4 times.
   * {m, } - means that a character/expression must occur at least "m" times.
     - Ex: {3, } - means it should occur at least 3 times.
-      - - - 0 or more
-      - - - 1 or more
+      - `*` - 0 or more
+      - `+` - 1 or more
       - ? - 0 or 1
       - {3} - Exactly 3
       - {3, } - 3 or more
