@@ -1,0 +1,104 @@
+<!-- ******************************************
+*  Author : Esten Grove   
+*  Created On : Sun Feb 03 2019
+*  File : index.html
+******************************************* -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Esten Grove">
+    <style>
+        *, 
+        *::after, 
+        *::before { 
+            box-sizing: border-box; 
+            margin: 0; 
+            padding: 0; 
+        }  
+        html { 
+            font-size: 62.5%; 
+        }
+        h2,
+        h4,
+        form {
+            font-family: 'Lora';
+            margin-bottom: 2rem;
+        }
+        h2 {
+            padding: 2rem;
+            font-size: 2.5rem;
+        }
+        h4 {
+            font-size: 2rem;
+        }
+        form {
+            margin: 3rem auto;
+            max-width: 35rem;
+            height: 35rem;
+            border: 1px solid #222;
+            border-radius: .3rem;
+            padding: 1rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        #username,
+        #password {
+            width: 100%;
+            height: 2.5rem;
+            margin-bottom: 1rem;
+            border-radius: .3rem;
+            border: none;
+            outline: none;
+            border: 1px solid #eaecef;
+        }
+        #username:focus,
+        #password:focus {
+            border: 1px solid #e84855;
+            padding: .5rem;
+        }
+        label {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #777;
+        }
+        button {
+            width: 100%;
+            height: 3rem;
+            background: #5cbcea;
+            color: #fff;
+            border: none;
+            outline: none;
+            border-radius: .3rem;
+            font-size: 1.2rem;
+            letter-spacing: .3rem;
+            cursor: pointer;
+        }
+    </style>
+    <title>RegEx: Groups</title>
+</head>
+
+<body>
+    <h2>RegEx: Groups</h2>
+
+    <form action="#">
+        <h4>Test Form</h4>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username">
+        <label for="password">Password</label>
+        <input type="text" name="password" id="password">
+        <button>Test</button>
+    </form>
+
+
+    <script type="text/javascript" src="Groups.js">
+
+    </script>
+</body>
+
+</html>
