@@ -10,10 +10,8 @@
 
 // The regex 
 const group1 = /foo(?=bar)/;
-
 // The string to test
 const testFoo = 'foo';
-
 // Run test
 console.log('Lookahead: ' + group1.test(testFoo)); // false
 
@@ -28,7 +26,7 @@ console.log('Lookahead: ' + group1.test(testFoobar)); // true
 
 // The regex
 const group2 = /[a-z](?=\+)/;
-
+// The string to test it on
 const testCase = 'dge+';
 console.log('Ex.3: ' + group2.test(testCase)); // true
 // Example 3 resolve true as it is looking for any letter immediately followed by a plus sign
