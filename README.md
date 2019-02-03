@@ -36,6 +36,7 @@ Anything inside of / / is what is to be tested for
     * Then to test you could run: 
       * /foo(?=bar)/.test(someString);  OR
       * reg.test(someString);
+        * This will only return a match if "foo" exists AND IS FOLLOWED BY "bar".
 * #### Negative Lookaheads
   * Like Postives, will search for two different groups. 
   * It will only return a match if the first group of characters IS NOT FOLLOWED BY the second group of characters. 
