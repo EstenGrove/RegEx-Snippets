@@ -1,0 +1,10 @@
+Characters allowed in an email address: 
+
+- uppercase/lowercase a-z/A-Z
+- digits 0-9
+- special characters: !#$%&'*+-/=?^_`{|}~
+- . used as part of the TLD
+
+Stipulations:
+
+- "(),:;<>@[\] and spaces are allowed with restrictions and inside of a quoted string. (ie. "allowed here")
