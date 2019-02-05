@@ -9,7 +9,7 @@
 
 // Methods for checking email format
 const emailReg = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
-const altEmailReg = /\w+@+\w{1,}.+/i;
+const altEmailReg = /\w+@+\w{1,}.+/i; //Another Alternate /\S+@+\w{1,}.+/gi
 const listedReg = /[a-z0-9\#|$|!|@|%|^|&|*|)|(|)]+@+[a-z]+.+(com|net|us|org|io|co.uk|fm|cn|fr|ru|it|de|com.mx)/;
 const basicEmailReg = /\S+(@)+\S+.(?=\S*)/;
 
