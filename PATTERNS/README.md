@@ -26,7 +26,7 @@ const matches = testCase.match(reg);
 ### __Tricks For Matching Character Patterns__
 
 #### __Match Any Character Using the Wildcard Operator__
-- "." 
+- Use the "." operator. 
 ```javascript
 const tc = 'Fat cat in a hat';
 
