@@ -1,7 +1,8 @@
 ## Useful RegEx Patterns and Tips
 
 #### __Testing Multiple Patterns__
-###### __Using the "OR" Operator "|"__
+###### __Using the "OR" Operator__
+- Use "|"
 ```javascript
 const reg = /yes|no|maybe/
 ```
@@ -11,6 +12,7 @@ const reg = /yes|no|maybe/
 const match = "testing".match(/test/i); // test
 ```
 #### __Extract All Matches to a Variable__
+- Use "gi" flags for all matches and case-insensitive.
 ```javascript
 // Test case
 const testCase = 'Testicles, are testing my patience';
@@ -23,7 +25,8 @@ const matches = testCase.match(reg);
 ```
 ### __Tricks For Matching Character Patterns__
 
-#### __Match Any Character Using the "." Wildcard Operator__
+#### __Match Any Character Using the Wildcard Operator__
+- "." 
 ```javascript
 const tc = 'Fat cat in a hat';
 
@@ -32,7 +35,7 @@ const reg = /.at/gi;
 const anyMatch = tc.match(reg); // ['Fat', 'cat', 'hat']
 ```
 #### __Match A Single Character Followed by a Specific Set of Characters__
-- Use "\[]" follwed by the desired pattern. Then use the "gi" flags.
+- Use "\[ ]" follwed by the desired pattern. Then use the "gi" flags.
 ```javascript
 const tc = 'Fat cat in a hat';
 
@@ -41,6 +44,7 @@ const reg = /[cfh]at/gi;
 const matchCFH = tc.match(reg); // ['Fat', 'cat', 'hat']
 ```
 #### __Match Characters You DON'T Want__
+- Use "^" immediately before the characters to look for. The ones you DON'T want.
 ```javascript
 const allCharsNoVowels = /[^aeiou]/gi;
 
