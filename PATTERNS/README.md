@@ -60,3 +60,60 @@ const everyA = /a+/gi;
 ```javascript
 const allI = /i*/gi;
 ```
+#### __Lazy-Matching__
+- Means matching the SMALLEST part of a string that meets the requirements. RegEx defaults to matching the LONGEST part of a string.
+- Use the "?" symbol to match.
+```javascript
+const testCase = 'catastrophe';
+
+// Will match the LONGEST part of a string with the requirements.
+const defaultReg = /c[a-z]*t/gi;
+
+// Will match the SMALLEST part of a string with the requirements.
+const lazyReg = /c[a-z]*?t/gi;
+
+testCase.match(defaultReg); // [ 'catast' ]
+testCase.match(lazyReg); // [ 'cat' ]
+```
+#### __Match Patterns at the START of a String__
+- Use the "^" character at the START of a pattern WITHOUT surrounding "\[ ]"
+```javascript
+// Test cases
+const johnInFront = 'John is the guy for the job.';
+const johnNotInFront = 'I figured John would be great.';
+
+const checkAtStart = /^John/; 
+
+johnInFront.match(checkAtStart); // true
+johnNotInFront.match(checkAtStart); // false
+```
+#### __Match Patterns at the END of a String__
+- Use the "$" at the END of pattern.
+```javascript
+// Test cases
+const johnInFront = 'John is a good guy';
+const johnInBack = 'We should hire John';
+
+const checkAtEnd = /John$/;
+
+johnInFront.test(checkAtEnd); // false
+johnInBack.test(checkAtEnd); // true
+```
+#### __Match All Letters & Numbers In A Row__
+- Use the "+" after the "\[ ]"
+  - Without the "+" it will match the individual letters/numbers instead of the set of letters/numbers.
+```javascript
+// Test cases
+const testLetters = '$^&((*^(so&(me^';
+const testNums = '324';
+
+const longHand = /[a-z0-9]+/gi;
+
+const shortHand = /\w+/gi;
+
+longHand.test(testLetters); // true. Using the "+" will match [ 'so', 'me' ]. Without "+" will match ['s', 'o', 'm', 'e']
+shortHand.test(testLetters); // true. 
+
+longHand.test(testNums); // true. Using the "+" will match ['324']. Without "+" will match ['3', '2', '4']
+shortHand.test(testNums); // true
+```
