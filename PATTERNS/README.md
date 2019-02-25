@@ -21,3 +21,11 @@ const reg = /test/gi; // Using "gi" after the regex looks for Global matches tha
 // Run test and save in "matches"
 const matches = testCase.match(reg);
 ```
+#### __Match Any Character Using the "." Wildcard Operator__
+```javascript
+const tc = 'Fat cat in a hat';
+
+const reg = /.at/gi;
+
+const anyMatch = tc.match(reg); // ['Fat', 'cat', 'hat']
+```
