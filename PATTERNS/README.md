@@ -6,13 +6,21 @@
 ##### __.test()__
 - Provides a boolean response
 ```javascript
-// RegEx
-/the/gi.test('the words'); // true
+const testCase = 'the words';
+
+const reg = /the/gi;
+
+reg.test(testCase); // true
 ```
 ##### __.match()__
 - Provides the actual string(s) that matches
 ```javascript
-"the words".match(/the/gi); // ['the']
+// Test case
+const testCase = 'the words';
+
+const reg = /the/gi;
+
+testCase.match(reg); // ['the']
 ```
 
 #### __Testing Multiple Patterns__
