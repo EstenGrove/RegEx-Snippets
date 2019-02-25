@@ -117,3 +117,8 @@ shortHand.test(testLetters); // true.
 longHand.test(testNums); // true. Using the "+" will match ['324']. Without "+" will match ['3', '2', '4']
 shortHand.test(testNums); // true
 ```
+#### __Match Everything EXCEPT Letters and Numbers__
+- Use the "\W" flag. Capital "W" WON'T look for letters or numbers.
+```javascript
+const noLettersNoNums = /\W/gi;
+```
