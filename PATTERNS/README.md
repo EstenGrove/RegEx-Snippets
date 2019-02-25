@@ -1,5 +1,20 @@
 ## Useful RegEx Patterns and Tips
 
+### Using .test() and .match()
+- When using .test() the RegEx comes first and is passed the test case.
+- When using .match() the test case is first and is passed the RegEx.
+##### __.test()__
+- Provides a boolean response
+```javascript
+// RegEx
+/the/gi.test('the words'); // true
+```
+##### __.match()__
+- Provides the actual string(s) that matches
+```javascript
+"the words".match(/the/gi); // ['the']
+```
+
 #### __Testing Multiple Patterns__
 ###### __Using the "OR" Operator__
 - Use "|"
