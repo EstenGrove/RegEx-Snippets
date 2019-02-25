@@ -21,7 +21,7 @@ const reg = /test/gi; // Using "gi" after the regex looks for Global matches tha
 // Run test and save in "matches"
 const matches = testCase.match(reg);
 ```
-### __Tricks For Matching Sets of Characters & Patterns of Characters__
+### __Tricks For Matching Character Patterns__
 
 #### __Match Any Character Using the "." Wildcard Operator__
 ```javascript
@@ -31,7 +31,7 @@ const reg = /.at/gi;
 
 const anyMatch = tc.match(reg); // ['Fat', 'cat', 'hat']
 ```
-###### __Match A Single Character Followed by a Specific Set of Characters__
+#### __Match A Single Character Followed by a Specific Set of Characters__
 ```javascript
 const tc = 'Fat cat in a hat';
 
