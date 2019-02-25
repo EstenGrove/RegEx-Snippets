@@ -122,3 +122,23 @@ shortHand.test(testNums); // true
 ```javascript
 const noLettersNoNums = /\W/gi;
 ```
+#### __Match All Numbers__
+- Use the "\d" flag.
+```javascript
+const allNums = /\d/g;
+```
+#### __Match all NON-NUMBERS__
+- Use the "\D" flag, with a capital "D".
+```javascript
+const noNums = /\D/g;
+```
+#### __Match white-space__
+- Use the "\s" flag with a lowercase "s".
+```javascript
+const whiteSpace = /\s/g;
+```
+#### __Match NON-Whitespace__
+- Use the "\S" flag with a capital "S".
+```javascript
+const noWhiteSpace = /\S/g;
+```
