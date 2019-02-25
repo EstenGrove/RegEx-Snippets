@@ -32,10 +32,27 @@ const reg = /.at/gi;
 const anyMatch = tc.match(reg); // ['Fat', 'cat', 'hat']
 ```
 #### __Match A Single Character Followed by a Specific Set of Characters__
+- Use "\[]" follwed by the desired pattern. Then use the "gi" flags.
 ```javascript
 const tc = 'Fat cat in a hat';
 
 const reg = /[cfh]at/gi;
 
 const matchCFH = tc.match(reg); // ['Fat', 'cat', 'hat']
+```
+#### __Match Characters You DON'T Want__
+```javascript
+const allCharsNoVowels = /[^aeiou]/gi;
+
+const allCharsNoVowelNoNums = /[^aeiou0-9]/gi;
+```
+#### __Match a Character(s) One Or More Times__
+- Use the "+" sign.
+```javascript
+const everyA = /a+/gi;
+```
+#### __Match Character(s) Zero or More Times__
+- Use the "*" symbol
+```javascript
+const allI = /i*/gi;
 ```
