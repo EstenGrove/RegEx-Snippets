@@ -4,6 +4,7 @@
 - When using .test() the RegEx comes first and is passed the test case.
 - When using .match() the test case is first and is passed the RegEx.
 ##### __.test()__
+- regex.test(testCase);
 - Provides a boolean response
 ```javascript
 const testCase = 'the words';
@@ -13,6 +14,7 @@ const reg = /the/gi;
 reg.test(testCase); // true
 ```
 ##### __.match()__
+- testCase.match(regex);
 - Provides the actual string(s) that matches
 ```javascript
 // Test case
