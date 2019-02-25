@@ -142,3 +142,17 @@ const whiteSpace = /\s/g;
 ```javascript
 const noWhiteSpace = /\S/g;
 ```
+#### __Match an Exact Number of Consecutive Character Occurences__
+- Using "{number}"
+```javascript
+// Test cases
+const test1 = 'formatting';
+const test2 = 'Timber';
+
+// RegEx
+const twoT = /t{2}/gi;
+
+// Run tests
+twoT.test(test1); // true
+twoT.test(test2); // false
+```
