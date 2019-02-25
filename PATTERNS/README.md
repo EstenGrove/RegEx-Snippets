@@ -29,3 +29,11 @@ const reg = /.at/gi;
 
 const anyMatch = tc.match(reg); // ['Fat', 'cat', 'hat']
 ```
+###### __Match A Single Character Followed by a Specific Set of Characters__
+```javascript
+const tc = 'Fat cat in a hat';
+
+const reg = /[cfh]at/gi;
+
+const matchCFH = tc.match(reg); // ['Fat', 'cat', 'hat']
+```
