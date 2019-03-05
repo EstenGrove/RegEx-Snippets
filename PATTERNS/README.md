@@ -1,5 +1,30 @@
 ## Useful RegEx Patterns and Tips
 
+### Using .test() and .match()
+- When using .test() the RegEx comes first and is passed the test case.
+- When using .match() the test case is first and is passed the RegEx.
+##### __.test()__
+- regex.test(testCase);
+- Provides a boolean response
+```javascript
+const testCase = 'the words';
+
+const reg = /the/gi;
+
+reg.test(testCase); // true
+```
+##### __.match()__
+- testCase.match(regex);
+- Provides the actual string(s) that matches
+```javascript
+// Test case
+const testCase = 'the words';
+
+const reg = /the/gi;
+
+testCase.match(reg); // ['the']
+```
+
 #### __Testing Multiple Patterns__
 ###### __Using the "OR" Operator__
 - Use "|"
@@ -141,4 +166,18 @@ const whiteSpace = /\s/g;
 - Use the "\S" flag with a capital "S".
 ```javascript
 const noWhiteSpace = /\S/g;
+```
+#### __Match an Exact Number of Consecutive Character Occurences__
+- Using "{number}"
+```javascript
+// Test cases
+const test1 = 'formatting';
+const test2 = 'Timber';
+
+// RegEx
+const twoT = /t{2}/gi;
+
+// Run tests
+twoT.test(test1); // true
+twoT.test(test2); // false
 ```
