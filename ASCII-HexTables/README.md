@@ -4,6 +4,7 @@
 ![asciifull](https://user-images.githubusercontent.com/41505038/53784663-37ff2380-3ed3-11e9-84eb-da30879d34c8.gif)
 
 ###### Copy/Paste Version
+<pre>
 Dec  Char                           Dec  Char     Dec  Char     Dec  Char
 ---------                           ---------     ---------     ----------
   0  NUL (null)                      32  SPACE     64  @         96  `
@@ -38,7 +39,7 @@ Dec  Char                           Dec  Char     Dec  Char     Dec  Char
  29  GS  (group separator)           61  =         93  ]        125  }
  30  RS  (record separator)          62  >         94  ^        126  ~
  31  US  (unit separator)            63  ?         95  _        127  DEL
-
+</pre>
 
 ### Extended Table
 ![extend](https://user-images.githubusercontent.com/41505038/53784676-43eae580-3ed3-11e9-99dc-58d779a41a18.gif)
