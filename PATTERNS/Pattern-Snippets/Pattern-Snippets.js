@@ -61,3 +61,16 @@ console.log(shortHand.test(testLetters)); // true
 
 console.log(longHand.test(testNums)); // true
 console.log(shortHand.test(testNums)); // true
+
+
+
+// Match an Exact Number of Occurences Consecutively
+
+// Test cases
+const test1 = 'formatting things'
+const test2 = 'Timber';
+
+const twoT = /t{2}/gi;
+
+console.log(twoT.test(test1)); // true
+console.log(twoT.test(test2)); // false
