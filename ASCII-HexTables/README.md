@@ -1,4 +1,4 @@
-# Ascii Table Reference
+# ASCII Table Reference
 
 ### Standard ASCII
 ![asciifull](https://user-images.githubusercontent.com/41505038/53784663-37ff2380-3ed3-11e9-84eb-da30879d34c8.gif)
