@@ -11,6 +11,9 @@ Anything inside of / / is what is to be tested for
 #### Symbols
 
 - . — (period) Matches any single character, except for line breaks.(new line)
+  - Example: __/.*dog.*/__ 
+    - This will match any number of characters that precede AND follow "dog". 
+      - #%$#*dog%^>>>#%#^#*HDFGFDKDFLDF = TRUE
 - \* — Matches the preceding expression 0 or more times.
 - + — Matches the preceding expression 1 or more times.
 - ? — Preceding expression is optional (Matches 0 or 1 times).
